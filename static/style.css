@@ -1,4 +1,3 @@
-/* General Body Styling */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -12,10 +11,10 @@ body {
     min-height: 100vh;
 }
 
-/* Header and Navigation Bar */
+
 header {
     width: 100%;
-    background: #007acc; /* Fresh blue */
+    background: #007acc;
     padding: 2vh 0;
 }
 
@@ -35,10 +34,10 @@ nav a {
 }
 
 nav a:hover {
-    background: #005f8c; /* Darker blue for hover effect */
+    background: #005f8c; 
 }
 
-/* Logo Container */
+
 .logo-container {
     display: flex;
     justify-content: center;
@@ -51,7 +50,7 @@ nav a:hover {
     margin-right: 1em;
 }
 
-/* About Page Styling */
+
 .about-section {
     background-color: white;
     padding: 3vh;
@@ -66,7 +65,7 @@ nav a:hover {
 
 .about-section h2 {
     font-size: 2rem;
-    color: #007acc; /* Soft blue */
+    color: #007acc; 
     margin-bottom: 2vh;
 }
 
@@ -91,7 +90,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Weather Card (Neumorphism Effect) */
+
 #weather-container {
     background: #ffffff;
     padding: 5vh;
@@ -104,19 +103,19 @@ nav a:hover {
     transition: transform 0.3s ease-in-out;
 }
 
-/* Hover effect for weather card */
+
 #weather-container:hover {
     transform: translateY(-1vh);
 }
 
-/* Weather Icon */
+
 #weather-icon {
     width: 20vw;
     max-width: 8em;
     margin: 2vh 0;
 }
 
-/* Text Styling */
+
 h2 {
     font-size: 2rem;
     color: #007acc; /* Accent color */
@@ -129,18 +128,18 @@ p {
     line-height: 1.5;
 }
 
-/* Smooth fade-in animation */
+
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(5vh); }
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* Apply animation to text */
+
 h2, p {
     animation: fadeIn 0.8s ease-in-out;
 }
 
-/* Footer */
+
 footer {
     text-align: center;
     margin-top: 4vh;
@@ -148,7 +147,7 @@ footer {
     color: #333;
 }
 
-/* Responsive Design */
+
 @media (max-width: 600px) {
     h1 {
         font-size: 1.3rem;
