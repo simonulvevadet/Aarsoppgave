@@ -1,0 +1,117 @@
+/* Import a sleek Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: white;
+    
+    /* Beautiful gradient background */
+    background: linear-gradient(to bottom, #002f6c, #00509e, #009de0);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header with logo and title */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    margin-right: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Subtle hover effect on logo */
+.logo:hover {
+    transform: scale(1.1);
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* Main Weather Card with Glassmorphism */
+#weather-container {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 30px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Smooth hover effect */
+#weather-container:hover {
+    transform: translateY(-5px);
+}
+
+/* Weather Icon */
+#weather-icon {
+    width: 100px;
+    height: auto;
+    margin: 10px 0;
+    animation: bounce 1.5s infinite alternate;
+}
+
+/* Weather Text */
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 1.2rem;
+    margin: 8px 0;
+}
+
+/* Smooth text fading in */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Bouncing icon effect */
+@keyframes bounce {
+    from { transform: translateY(0); }
+    to { transform: translateY(-8px); }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    #weather-container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
