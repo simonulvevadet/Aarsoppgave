@@ -16,6 +16,7 @@ header {
     width: 100%;
     background: #007acc;
     padding: 2vh 0;
+    border-radius: 5vh;
 }
 
 nav {
