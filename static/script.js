@@ -12,7 +12,7 @@ const apiUrl = `https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=$
 async function getWeather() {
     try {
         const response = await fetch(apiUrl, {
-            headers: { "User-Agent": "YourAppName/1.0 (your@email.com)" }
+            headers: { "User-Agent": "YRAPI/1.0 (kult@email.com)" }
         });
 
         if (!response.ok) throw new Error("Failed to fetch weather data");
@@ -26,9 +26,6 @@ async function getWeather() {
         temperatureElement.textContent = forecast.air_temperature;
         windElement.textContent = forecast.wind_speed;
         conditionElement.textContent = condition.replace(/_/g, " ");
-
-        // Set weather icon
-        iconElement.src = `https://github.com/metno/weathericons/blob/main/weathericons/png/${condition}.png?raw=true`;
 
     } catch (error) {
         console.error(error);
