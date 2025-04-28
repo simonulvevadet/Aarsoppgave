@@ -26,30 +26,13 @@ Denne designmanualen beskriver stilreglene for et nettsted, basert på det tilh�
   - Padding: 2vh 0
   - Border-radius: 5vh
 
-- **Navigasjon (nav):**
-  - Flexbox, horisontal retning
-  - Mellomrom mellom lenker: 5%
-  - Lenker: hvit tekst, uten understrek, 1.2rem, padding, avrundede hjørner
-  - Hover-effekt: mørkere blå (#005f8c)
-
 ## Logo
 
 - **Logo-container:** Flexbox, sentrert horisontalt og vertikalt, margin-bottom: 3vh
 - **Logo:** Bredde: 8vw, margin-right: 1em
 
-## Seksjoner
 
-### Om-seksjon (.about-section)
-
-- Bakgrunn: hvit
-- Padding: 3vh
-- Margin-topp: 4vh
-- Border-radius: 1em
-- Bredde: 90%, maks 800px
-- Tekstfarge: #333
-- Skygge: subtil
-
-#### Tekst
+### Tekst
 
 - **H2:** 2rem, farge: #007acc, margin-bottom: 2vh
 - **P:** 1.2rem, linjeavstand 1.6, margin-bottom: 2vh
@@ -66,19 +49,6 @@ Denne designmanualen beskriver stilreglene for et nettsted, basert på det tilh�
 - Hover-effekt: løftes med translateY
 
 - **Ikon (#weather-icon):** Bredde: 20vw, maks 8em, margin: 2vh 0
-
-## Animasjon
-
-- Fade-in effekt (0.8s, ease-in-out) for `<h2>` og `<p>`
-  - Fra: opacity 0 og translateY(5vh)
-  - Til: opacity 1 og translateY(0)
-
-## Footer
-
-- Sentrert tekst
-- Margin-top: 4vh
-- Fontstørrelse: 1rem
-- Farge: #333
 
 ## Responsivt Design (max-width: 600px)
 
