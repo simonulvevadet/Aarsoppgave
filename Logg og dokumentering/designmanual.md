@@ -1,7 +1,6 @@
 
 # Designmanual
 
-Denne designmanualen beskriver stilreglene for et nettsted, basert på det tilhørende CSS-dokumentet.
 
 ## Typografi
 
@@ -9,7 +8,7 @@ Denne designmanualen beskriver stilreglene for et nettsted, basert på det tilh�
 - **Farge:** #333 (mørk grå)
 - **Avsnitt:** Linjeavstand 1.5–1.6, fontstørrelse 1.2rem
 
-## Layout og Bakgrunn
+
 
 - **Body:**
   - Sentrert tekst og innhold
