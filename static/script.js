@@ -2,7 +2,6 @@ const locationElement = document.getElementById("location");
 const temperatureElement = document.getElementById("temperature");
 const windElement = document.getElementById("wind");
 const conditionElement = document.getElementById("condition");
-const iconElement = document.getElementById("weather-icon");
 
 const lat = 59.93;
 const lon = 10.72;
