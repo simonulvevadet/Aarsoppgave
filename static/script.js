@@ -1,8 +1,8 @@
 const locationElement = document.getElementById("location");
 const temperatureElement = document.getElementById("temperature");
 const windElement = document.getElementById("wind");
-const conditionElement = document.getElementById("condition"); //Henter HTML-elementer ID-ene så man kan oppdatere de senere med værdata
-
+const conditionElement = document.getElementById("condition"); 
+// 1-4  Henter HTML-elementer ID-ene så man kan oppdatere de senere med værdata
 const lat = 59.93;
 const lon = 10.72;  // 6-7 latitude og longitude
 
