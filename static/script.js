@@ -42,3 +42,33 @@ async function getWeather() {
 // 37-41 Hvis noe går galt så logges feilen i konsollen og en feilmelding vises på nettsiden
 // 44 laster dataen når siden lastes
 getWeather();
+
+
+
+// Askim 
+const askimLat = 59.58;
+const askimLon = 11.15;
+
+async function getAskimWeather() {
+    const apiUrl = `https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=${askimLat}&lon=${askimLon}`;
+    try {
+        const response = await fetch(apiUrl, {
+            headers: { "User-Agent": "YRAPI/1.0 (kult@email.com)" }
+        });
+
+        if (!response.ok) throw new Error("Failed to fetch Askim weather data");
+
+        const data = await response.json();
+        const forecast = data.properties.timeseries[0].data.instant.details;
+        const condition = data.properties.timeseries[0].data.next_1_hours.summary.symbol_code;
+
+       document.getElementById("temperature-askim").textContent = forecast.air_temperature;
+       document.getElementById("wind-askim").textContent = forecast.wind_speed;
+       document.getElementById("condition-askim").textContent = condition.replace(/_/g, " ");
+    } catch (error) {
+        console.error(error);
+        document.getElementById("weather-container-askim").innerHTML = "<p>Failed to load Askim weather data.</p>";
+    }
+}
+
+getAskimWeather();
